@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="1204.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lab3.UserViewController">
+   <left>
+      <VBox prefHeight="628.0" prefWidth="234.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Тип транспорта:">
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding></Label>
+            <ChoiceBox fx:id="cbTransport" prefHeight="24.0" prefWidth="235.0">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </ChoiceBox>
+            <Label text="Вид питания:">
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding></Label>
+            <ChoiceBox fx:id="cbNutrition" prefHeight="24.0" prefWidth="235.0">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </ChoiceBox>
+            <Label text="Количество дней:">
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding></Label>
+            <Spinner fx:id="spNumberDays" prefHeight="24.0" prefWidth="236.0">
+               <VBox.margin>
+                  <Insets bottom="40.0" />
+               </VBox.margin>
+            </Spinner>
+            <Button fx:id="btnFind" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onFindButtonClick" prefHeight="35.0" prefWidth="175.0" text="Подобрать тур">
+               <VBox.margin>
+                  <Insets bottom="15.0" left="30.0" />
+               </VBox.margin>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#onShowAllButtonClick" prefHeight="35.0" prefWidth="175.0" text="Показать все туры">
+               <VBox.margin>
+                  <Insets left="30.0" />
+               </VBox.margin></Button>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <padding>
+      <Insets left="10.0" />
+   </padding>
+   <center>
+      <TableView fx:id="tabTours" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="colCountry" prefWidth="112.0" text="Страна" />
+          <TableColumn fx:id="colLocality" prefWidth="162.0" text="Населенный пункт" />
+            <TableColumn fx:id="colType" prefWidth="120.0" text="Тип" />
+            <TableColumn fx:id="colTransport" prefWidth="167.0" text="Транспорт" />
+            <TableColumn fx:id="colNutrition" prefWidth="181.0" text="Питание" />
+            <TableColumn fx:id="colNumberDays" prefWidth="170.0" text="Количество дней" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>

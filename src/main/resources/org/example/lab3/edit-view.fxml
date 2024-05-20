@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="372.0" prefWidth="456.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lab3.EditViewController">
+   <children>
+      <Label contentDisplay="RIGHT" layoutX="101.0" layoutY="46.0" text="Страна:" />
+      <Label contentDisplay="RIGHT" layoutX="21.0" layoutY="84.0" prefHeight="16.0" prefWidth="157.0" text="Населенный пункт:" />
+      <Label layoutX="92.0" layoutY="121.0" text="Тип тура:" />
+      <Label layoutX="81.0" layoutY="198.0" text="Транспорт:" />
+      <Label layoutX="94.0" layoutY="157.0" text="Питание:" />
+      <Label layoutX="35.0" layoutY="237.0" text="Количество дней:" />
+      <TextField fx:id="tfCountry" layoutX="162.0" layoutY="42.0" prefHeight="24.0" prefWidth="275.0" />
+      <TextField fx:id="tfLocality" layoutX="162.0" layoutY="80.0" prefHeight="24.0" prefWidth="275.0" />
+      <ChoiceBox fx:id="cbType" layoutX="162.0" layoutY="117.0" prefHeight="24.0" prefWidth="275.0" />
+      <ChoiceBox fx:id="cbNutrition" layoutX="162.0" layoutY="153.0" prefHeight="24.0" prefWidth="275.0" />
+      <ChoiceBox fx:id="cbTransport" layoutX="162.0" layoutY="194.0" prefHeight="24.0" prefWidth="275.0" />
+      <TextField fx:id="tfNumbersDays" layoutX="162.0" layoutY="233.0" prefHeight="24.0" prefWidth="275.0" />
+      <Button fx:id="btnAdd" layoutX="109.0" layoutY="302.0" mnemonicParsing="false" onAction="#onAddButtonClick" prefHeight="38.0" prefWidth="102.0" text="Добавить" />
+      <Button fx:id="btnCancel" layoutX="249.0" layoutY="302.0" mnemonicParsing="false" onAction="#onCancelButtonClick" prefHeight="38.0" prefWidth="102.0" text="Отмена" />
+   </children>
+</AnchorPane>

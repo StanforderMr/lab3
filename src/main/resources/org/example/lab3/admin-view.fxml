@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="377.0" prefWidth="929.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lab3.AdminViewController">
+    <padding>
+        <Insets left="10.0" />
+    </padding>
+    <center>
+        <TableView fx:id="tabTours" prefHeight="346.0" prefWidth="897.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="colCountry" prefWidth="112.0" text="Страна" />
+                <TableColumn fx:id="colLocality" prefWidth="162.0" text="Населенный пункт" />
+                <TableColumn fx:id="colType" prefWidth="120.0" text="Тип" />
+                <TableColumn fx:id="colTransport" prefWidth="167.0" text="Транспорт" />
+                <TableColumn fx:id="colNutrition" prefWidth="181.0" text="Питание" />
+                <TableColumn fx:id="colNumberDays" prefWidth="170.0" text="Количество дней" />
+            </columns>
+        </TableView>
+    </center>
+   <top>
+      <HBox prefHeight="61.0" prefWidth="897.0" BorderPane.alignment="CENTER">
+         <children>
+                <Button fx:id="btnAdd" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onAddButtonClick" prefHeight="35.0" prefWidth="136.0" text="Добавить тур">
+               <HBox.margin>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+                </Button>
+                <Button fx:id="btnDelete" alignment="CENTER" mnemonicParsing="false" onAction="#onDeleteButtonClick" prefHeight="35.0" prefWidth="113.0" text="Удалить тур">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>
